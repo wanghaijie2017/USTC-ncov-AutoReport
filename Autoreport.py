@@ -73,8 +73,9 @@ class AutoRepot(object):
             #######################
             print("end report...")
 
-        except ValueError:
+        except ValueError as e:
             print("Error...")
+            print(e)
             ######################
             # self.send_mail(False)
             ######################
