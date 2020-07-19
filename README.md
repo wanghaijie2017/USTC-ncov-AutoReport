@@ -33,7 +33,9 @@ nohup python3 Autoreport.py data.json > autoreport.log 2>&1 &
 
 3. 将找到的 Data 除 `_token` （每次都会改变，所以不需要复制，脚本中会每次获取新的 token 并添加到要提交的数据中）外都复制下来，存放在 `data.json` 中，并参考示例文件转换为对应的格式。
 
-4. 修改AutoReport.py中的 帐号/密码
+4. 修改AutoReport.py中 132,133行的 帐号/密码   中科大统一身份认证帐号密码
+    stuid = 'SA18225XXX'
+    password = 'Your password'
 
 5. 尝试运行脚本。
 
