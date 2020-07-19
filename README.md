@@ -5,11 +5,14 @@
 `data.json` 为 `post` 方法需要使用的数据（也就是之前需要手动提交的数据）文件的路径。
 
 ```shell
+安装依赖
 pip3 install bs4 lxml
-python3 Autoreport.py data.json
 
-后台运行 
+运行脚本
+python3 Autoreport.py data.json
+或者在后台运行, 关闭shell也不会中止脚本  二选一即可
 nohup python3 Autoreport.py data.json > autoreport.log 2>&1 &
+
 ```
 
 这里的 `data.json` 为一个示例。
