@@ -127,7 +127,9 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='USTC nCov auto report script.')
     parser.add_argument('data_path', help='path to your own data used for post method', type=str)
     args = parser.parse_args()
-    stuid = getpass.getpass('Please input your stuid: ')
-    password = getpass.getpass('Please input your password: ')
+#     stuid = getpass.getpass('Please input your stuid: ')
+#     password = getpass.getpass('Please input your password: ')
+    stuid = 'SA18225XXX'
+    password = 'Your password'
     autorepoter = AutoRepot(stuid=stuid, password=password, data_path=args.data_path)
     autorepoter.main_loop()
